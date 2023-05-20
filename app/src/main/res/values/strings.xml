@@ -4,4 +4,6 @@
     <string name="textview">TextView</string>
     <string name="register">REGISTER</string>
     <string name="login">LOGIN</string>
+    <string name="e_mail">E-MAIL</string>
+    <string name="password">PASSWORD</string>
 </resources>
