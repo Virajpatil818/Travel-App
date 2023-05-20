@@ -1,5 +1,7 @@
 package com.example.myapplication;
 
+import static android.app.PendingIntent.getActivity;
+
 import androidx.annotation.NonNull;
 import androidx.appcompat.app.AppCompatActivity;
 import androidx.fragment.app.Fragment;
@@ -55,6 +57,7 @@ public class Home extends AppCompatActivity {
         FragmentTransaction ft= fm.beginTransaction();
         if (flag){
             ft.add(androidx.core.R.id.action_container,fragment);
+
         }
         else{
             ft.replace(androidx.core.R.id.action_container,fragment);
