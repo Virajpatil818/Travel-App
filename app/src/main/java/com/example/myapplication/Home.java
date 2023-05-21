@@ -66,7 +66,4 @@ public class Home extends AppCompatActivity {
 
         ft.commit();
     }
-
-
-
 }
