@@ -52,17 +52,21 @@ public class Home extends AppCompatActivity {
         });
         bnv.setSelectedItemId(R.id.home);
     }
-    public void loadfrag(Fragment fragment,boolean flag){
-        FragmentManager fm =getSupportFragmentManager();
-        FragmentTransaction ft= fm.beginTransaction();
-        if (flag){
-            ft.add(R.id.container,fragment);
+    public void loadfrag(Fragment fragment, boolean flag) {
+        FragmentManager fm = getSupportFragmentManager();
+        FragmentTransaction ft = fm.beginTransaction();
 
-        }
-        else{
-            ft.replace(R.id.container,fragment);
-            ft.commit();
+        if (flag) {
+            fm.popBackStack(null, FragmentManager.POP_BACK_STACK_INCLUSIVE);
+            ft.replace(R.id.container, fragment);
+        } else {
+            ft.replace(R.id.container, fragment);
+            ft.addToBackStack(null);
         }
 
+        ft.commit();
     }
+
+
+
 }

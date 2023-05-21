@@ -3,7 +3,9 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context=".Directionfrag">
+    tools:context=".Directionfrag"
+    android:id="@+id/fragment_directionfrag"
+    >
 
     <!-- TODO: Update blank fragment layout -->
     <TextView
