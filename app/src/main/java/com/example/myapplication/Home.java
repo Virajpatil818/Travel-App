@@ -56,11 +56,11 @@ public class Home extends AppCompatActivity {
         FragmentManager fm =getSupportFragmentManager();
         FragmentTransaction ft= fm.beginTransaction();
         if (flag){
-            ft.add(androidx.core.R.id.action_container,fragment);
+            ft.add(R.id.container,fragment);
 
         }
         else{
-            ft.replace(androidx.core.R.id.action_container,fragment);
+            ft.replace(R.id.container,fragment);
             ft.commit();
         }
 
